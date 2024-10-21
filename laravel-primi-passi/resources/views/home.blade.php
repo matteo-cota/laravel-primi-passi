@@ -11,7 +11,9 @@
     <nav>
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('about') }}">About</a>
+        <a href="{{ route('contacts') }}">Contacts</a>
     </nav>
+
     <h1>Hello World!</h1>
 </body>
 

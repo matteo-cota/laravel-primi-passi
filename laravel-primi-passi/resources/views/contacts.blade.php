@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contacts</title>
 </head>
 
 <body>
@@ -14,8 +14,15 @@
         <a href="{{ route('contacts') }}">Contacts</a>
     </nav>
 
-    <h1>About Us</h1>
-    <p>Questa è la pagina di About Us.</p>
+    <h1>Contact List</h1>
+
+    <ul>
+        @foreach($contacts as $contact)
+        <li>
+            <strong>{{ $contact['name'] }}</strong>: {{ $contact['email'] }}
+        </li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
